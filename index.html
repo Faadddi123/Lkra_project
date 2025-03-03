@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Rental</title>
+    <!-- Montserrat Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="/">LOGO</a>
+                <span class="tagline">comfort in every step</span>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#career">Career</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="#login" class="btn btn-login">Log in</a>
+                <a href="#signup" class="btn btn-signup">Sign up</a>
+                <div class="language-selector">
+                    <i class="fas fa-globe"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Background SVGs -->
+    <div class="background-shapes">
+        <svg class="shape-orange-circles" width="1390" height="1081" viewBox="0 0 1390 1081" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="446.5" cy="290.5" rx="852.5" ry="790.5" fill="#FFA559"/>
+            <path d="M1378 290.5C1378 719.616 1002.56 1069 537.5 1069C72.4353 1069 -303 719.616 -303 290.5C-303 -138.617 72.4353 -488 537.5 -488C1002.56 -488 1378 -138.617 1378 290.5Z" stroke="#FFA559" stroke-width="24"/>
+            <ellipse cx="325" cy="438.5" rx="632" ry="611.5" fill="#FF6000" fill-opacity="0.34"/>
+        </svg>
+        <svg class="shape-1" width="482" height="1581" viewBox="0 0 482 1581" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1693 790.5C1693 1219.62 1317.56 1569 852.5 1569C387.435 1569 12 1219.62 12 790.5C12 361.383 387.435 12 852.5 12C1317.56 12 1693 361.383 1693 790.5Z" stroke="#FFA559" stroke-width="24"/>
+        </svg>
+        <svg class="shape-2" width="385" height="1849" viewBox="0 0 385 1849" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M373 924.5C373 1429.14 -12.4689 1837 -486.5 1837C-960.531 1837 -1346 1429.14 -1346 924.5C-1346 419.863 -960.531 12 -486.5 12C-12.4689 12 373 419.863 373 924.5Z" stroke="#9A9A9A" stroke-width="24" stroke-miterlimit="4.13936"/>
+        </svg>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Smart Rental, Easy <span>Purchase Option.</span></h1>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3>50K+</h3>
+                        <p>Active Users</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>80K+</h3>
+                        <p>Items Available</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>4.8/5</h3>
+                        <p>User Rating</p>
+                    </div>
+                    <div class="stat-item trustpilot">
+                        <i class="fas fa-star"></i>
+                        <span>Trustpilot</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-illustration.png" alt="Smart Rental Illustration">
+                <div class="app-buttons">
+                    <a href="#" class="play-store">
+                        <img src="images/google-play.png" alt="Get it on Google Play">
+                    </a>
+                    <a href="#" class="app-store">
+                        <img src="images/app-store.png" alt="Download on App Store">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="search-container">
+            <div class="search-bar">
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <input type="text" placeholder="I'm looking for ....">
+                <div class="location-dropdown">
+                    <span>Rabat</span>
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2>Popular Categories</h2>
+            <div class="category-grid">
+                <a href="#" class="category-item active">
+                    <i class="fas fa-laptop"></i>
+                    <span>Electronics</span>
+                </a>
+                <a href="#" class="category-item">
+                    <i class="fas fa-desktop"></i>
+                    <span>Electronics</span>
+                </a>
+                <a href="#" class="category-item">
+                    <i class="fas fa-cog"></i>
+                    <span>Tools</span>
+                </a>
+                <a href="#" class="category-item">
+                    <i class="fas fa-camera"></i>
+                    <span>Cameras</span>
+                </a>
+                <a href="#" class="category-item">
+                    <i class="fas fa-music"></i>
+                    <span>Music</span>
+                </a>
+                <a href="#" class="category-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Electronics</span>
+                </a>
+            </div>
+            <div class="category-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recently Active Items Section -->
+    <section class="recent-items" id="recent-items">
+        <div class="container">
+            <h2>Recently active items</h2>
+            <div class="items-grid">
+                <div class="item-card">
+                    <div class="item-image"></div>
+                    <div class="item-content">
+                        <h3 class="item-title">Sun Embroidery Hat, Casual Sunshine Baseball black</h3>
+                        <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                        <div class="item-price">25 DH / DAY</div>
+                        <div class="item-seller">Yara Longman</div>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div class="item-image"></div>
+                    <div class="item-content">
+                        <h3 class="item-title">Sun Embroidery Hat, Casual Sunshine Baseball black</h3>
+                        <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                        <div class="item-price">25 DH / DAY</div>
+                        <div class="item-seller">Yara Longman</div>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div class="item-image"></div>
+                    <div class="item-content">
+                        <h3 class="item-title">Sun Embroidery Hat, Casual Sunshine Baseball black</h3>
+                        <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                        <div class="item-price">25 DH / DAY</div>
+                        <div class="item-seller">Yara Longman</div>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div class="item-image"></div>
+                    <div class="item-content">
+                        <h3 class="item-title">Sun Embroidery Hat, Casual Sunshine Baseball black</h3>
+                        <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                        <div class="item-price">25 DH / DAY</div>
+                        <div class="item-seller">Yara Longman</div>
+                    </div>
+                </div>
+            </div>
+            <div class="show-more">
+                <button class="btn-show-more">Show more</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2>Comment <span>ça marche</span> ?</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-image">
+                        <img src="images/step1.png" alt="Step 1">
+                    </div>
+                    <h3>lorem upsim look da</h3>
+                    <p>Pas de commentaire pour le moment ! Ajoutez-en un pour lancer la conversation.</p>
+                    <div class="step-arrow">
+                        <img src="images/svg/arrow.svg" alt="Next Step">
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-image">
+                        <img src="images/step2.png" alt="Step 2">
+                    </div>
+                    <h3>lorem upsim look da</h3>
+                    <p>Pas de commentaire pour le moment ! Ajoutez-en un pour lancer la conversation.</p>
+                    <div class="step-arrow">
+                        <img src="images/svg/arrow.svg" alt="Next Step">
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-image">
+                        <img src="images/step3.png" alt="Step 3">
+                    </div>
+                    <h3>lorem upsim look da</h3>
+                    <p>Pas de commentaire pour le moment ! Ajoutez-en un pour lancer la conversation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Feedback Section -->
+    <section class="feedback">
+        <div class="container">
+            <p class="section-label">User testimonial</p>
+            <h2>Feedback from <span>our User</span></h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_17_396)">
+                                <path d="M74.6854 52.5256L77.3783 52.463C106.875 51.962 97.0429 8.62484 65.4794 20.0854C42.1826 28.5399 46.5038 67.4306 71.4289 73.8185C82.4511 76.6366 94.7257 74.6326 85.5824 71.5013C77.7541 68.871 71.4289 61.2933 71.8673 55.0933C71.9925 53.7155 73.1824 52.5256 74.6854 52.5256Z" fill="#FFA559"/>
+                                <path d="M17.133 18.5198C-11.2366 29.4167 0.286603 77.0125 31.7875 79.0792C39.9915 79.6428 42.1207 77.7014 35.9208 75.3842C29.9087 73.1297 22.3309 62.4833 21.5168 55.2813C21.3289 53.8409 22.4562 52.651 23.8966 52.651C32.1632 52.651 35.6076 52.651 40.4298 46.0126C52.2662 29.6046 36.547 11.0674 17.133 18.5198Z" fill="#FFA559"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_17_396">
+                                    <rect width="96" height="96" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="user-profile">
+                        <div class="profile-pic"></div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="user-info">
+                        <span class="user-name">SARA MONTASIR</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_17_396)">
+                                <path d="M74.6854 52.5256L77.3783 52.463C106.875 51.962 97.0429 8.62484 65.4794 20.0854C42.1826 28.5399 46.5038 67.4306 71.4289 73.8185C82.4511 76.6366 94.7257 74.6326 85.5824 71.5013C77.7541 68.871 71.4289 61.2933 71.8673 55.0933C71.9925 53.7155 73.1824 52.5256 74.6854 52.5256Z" fill="#FFA559"/>
+                                <path d="M17.133 18.5198C-11.2366 29.4167 0.286603 77.0125 31.7875 79.0792C39.9915 79.6428 42.1207 77.7014 35.9208 75.3842C29.9087 73.1297 22.3309 62.4833 21.5168 55.2813C21.3289 53.8409 22.4562 52.651 23.8966 52.651C32.1632 52.651 35.6076 52.651 40.4298 46.0126C52.2662 29.6046 36.547 11.0674 17.133 18.5198Z" fill="#FFA559"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_17_396">
+                                    <rect width="96" height="96" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="user-profile">
+                        <div class="profile-pic"></div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="user-info">
+                        <span class="user-name">SARA MONTASIR</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download App Section -->
+    <section class="download-app">
+        <!-- SVG Background -->
+        <svg class="download-bg" width="1920" height="316" viewBox="0 0 1920 316" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="1920" height="316" fill="#9A9A9A"/>
+            <mask id="mask0_22_75" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1920" height="316">
+                <rect width="1920" height="316" fill="#FF6000"/>
+            </mask>
+            <g mask="url(#mask0_22_75)">
+                <circle cx="1861" cy="367" r="348" stroke="white" stroke-opacity="0.12" stroke-width="2"/>
+                <path d="M1742 -222.5C1742 -17.9423 1564.32 148 1345 148C1125.68 148 948 -17.9423 948 -222.5C948 -427.058 1125.68 -593 1345 -593C1564.32 -593 1742 -427.058 1742 -222.5Z" stroke="white" stroke-opacity="0.12" stroke-width="2"/>
+                <circle cx="615.5" cy="-190.5" r="392.5" stroke="white" stroke-opacity="0.12" stroke-width="2"/>
+                <circle cx="1008.5" cy="546.5" r="433.5" stroke="white" stroke-opacity="0.12" stroke-width="2"/>
+            </g>
+        </svg>
+        
+        <div class="container">
+            <div class="download-content">
+                <div class="download-text">
+                    <h2>Ready to start ?</h2>
+                    <h3>Download our mobile app</h3>
+                </div>
+                <div class="app-buttons">
+                    <a href="#" class="google-play">
+                        <img src="images/google-play.png" alt="Get it on Google Play">
+                    </a>
+                    <a href="#" class="app-store">
+                        <img src="images/app-store.png" alt="Download on App Store">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="why-us">
+        <div class="accent-line"></div>
+        <div class="container">
+            <h2>WHY US ?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon gray">
+                    </div>
+                    <h3>EVERYONE IS VERIFIED</h3>
+                    <p>is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon orange">
+                    </div>
+                    <h3>EVERYONE IS VERIFIED</h3>
+                    <p>is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon gray">
+                    </div>
+                    <h3>EVERYONE IS VERIFIED</h3>
+                    <p>is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon orange">
+                    </div>
+                    <h3>EVERYONE IS VERIFIED</h3>
+                    <p>is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon gray">
+                    </div>
+                    <h3>EVERYONE IS VERIFIED</h3>
+                    <p>is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon orange">
+                    </div>
+                    <h3>EVERYONE IS VERIFIED</h3>
+                    <p>is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#">LOGO</a>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="#">Who we are</a></li>
+                            <li><a href="#">Our mission</a></li>
+                            <li><a href="#">Our values</a></li>
+                            <li><a href="#">Our vision</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Assistance</h4>
+                        <ul>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Our process</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="tel:+212614169169">+212 614 16 91 69</a></li>
+                            <li><a href="mailto:contact@lkraa.com">contact@lkraa.com</a></li>
+                            <li>Technopark, Rue Mohamed Al Jazouli</li>
+                            <li>Madinat Al Irfane, Rabat - Maroc</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
