@@ -1,4 +1,29 @@
-/* Reset and base styles */
+/* Custom Scrollbar Styles - placed at the top of the file */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #FF6000 white;
+}
+
+html::-webkit-scrollbar {
+    width: 8px;
+    background-color: white;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #FF6000;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background-color: #e25600;
+}
+
+/* Reset Styles */
 * {
     margin: 0;
     padding: 0;
@@ -19,10 +44,27 @@ body {
     padding: 0 20px;
 }
 
-/* Header styles */
-.header {
-    background-color: rgba(255, 137, 27, 0.5);
+/* Header styles with scroll effect */
+header.header {
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    padding: 20px 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: #5F5F5F;
+    background-color: rgba(255, 135, 7, 0); /* Start transparent */
+}
+
+header.header.scrolled {
+    background-color: rgba(255, 135, 7, 0.451); /* 50% opacity when scrolled */
+    box-shadow: 0 2px 10px rgba(255, 135, 7, 0.451);
+}
+
+/* Other header styles */
+.header {
     width: 100%;
     padding: 20px 0;
     z-index: 10;
@@ -905,12 +947,20 @@ body {
 
 /* Download App section */
 .download-app {
+    width: 100%;
     position: relative;
     padding: 80px 0;
     background: transparent;
     text-align: left;
     overflow: hidden;
     color: white;
+}
+
+.download-app .container {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 .download-bg {
@@ -920,15 +970,24 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
+    object-fit: cover;
+}
+
+/* Make sure SVG scales correctly to fill the width */
+.download-bg svg {
+    width: 100%;
+    height: 100%;
 }
 
 .download-content {
     position: relative;
     z-index: 1;
-    max-width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 50px;
 }
 
 .download-content h2 {
@@ -960,16 +1019,19 @@ body {
     .download-content {
         flex-direction: column;
         text-align: center;
-        gap: 30px;
+    }
+
+    .download-text {
+        margin-bottom: 30px;
+    }
+
+    .download-content h3 {
+        font-size: 32px;
     }
     
     .app-buttons {
-        justify-content: center;
-    }
-    
-    .download-content h3 {
-        font-size: 32px;
-        margin-bottom: 0;
+        flex-direction: column;
+        gap: 15px;
     }
 }
 
@@ -1166,4 +1228,145 @@ body {
     .features-grid {
         grid-template-columns: 1fr;
     }
-} 
+}
+
+/* Animation styles for scroll reveal */
+.reveal-on-scroll.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.reveal-on-scroll.revealed {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease, transform 0.8s ease;
+}
+
+/* Different animation types */
+.reveal-fade-in.hidden {
+    opacity: 0;
+}
+
+.reveal-from-left.hidden {
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+.reveal-from-right.hidden {
+    opacity: 0;
+    transform: translateX(50px);
+}
+
+.reveal-scale.hidden {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+/* Scroll to top button */
+#scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #FF6000;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+#scroll-to-top:hover {
+    background: #e25600;
+    transform: translateY(-3px);
+}
+
+/* Hero animations */
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0.1;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0.1;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.hero-content.animated {
+    animation: slideFromLeft 1.2s ease-out forwards;
+}
+
+.hero-image.animated {
+    animation: slideFromRight 1.2s ease-out forwards;
+}
+
+/* Initially hide hero elements before animation */
+.hero-content, .hero-image {
+    opacity: 0;
+}
+
+/* Scroll reveal animations */
+.scroll-reveal.hidden {
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+.scroll-reveal.revealed {
+    opacity: 1;
+}
+
+/* Different animation types */
+.from-left.hidden {
+    transform: translateX(-50px);
+}
+
+.from-right.hidden {
+    transform: translateX(50px);
+}
+
+.from-bottom.hidden {
+    transform: translateY(50px);
+}
+
+.from-top.hidden {
+    transform: translateY(-50px);
+}
+
+.zoom-in.hidden {
+    transform: scale(0.8);
+}
+
+.zoom-out.hidden {
+    transform: scale(1.2);
+}
+
+/* Reveal delay variations */
+.delay-100 { transition-delay: 0.1s; }
+.delay-200 { transition-delay: 0.2s; }
+.delay-300 { transition-delay: 0.3s; }
+.delay-400 { transition-delay: 0.4s; }
+.delay-500 { transition-delay: 0.5s; } 
